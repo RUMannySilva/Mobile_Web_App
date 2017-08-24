@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Northside Youth Soccer league</title>
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/4.2.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/4.2.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/4.2.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/4.2.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/4.2.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+    <link href="assets/stylesheet/reset32.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
+    </script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="assets/stylesheet/reset32.css">
+    <link rel="stylesheet" type="text/css" href="assets/stylesheet/main32.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html" class="icon"><img class="icon icons8-Home" width="48" height="48" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAEA0lEQVRoQ+2YXUgUURTHz8yua+1qumttuzNrZVnRBxQGvZRhT65RYFCBREhf0ENREIY9udKDUr5IPUSfRIRQQYKiRlTSx0vQF9SDZYQ1s1uR9qnluu50711n24/ZvbvujLIwA4I7995z/r9zzr33MAxk+cNkuX7QAaY7g5pm4DbPb8aAlaLYqRWoZgBdPL8NGW/DwiWAmk2ieFMLCE0Aejhut8QwF4FhQvYlSWIkaa/b672sNoTqAN0uVz0S2aQkFDk74haEVjUhVAVAZdOCgn5UFmjii8m/fvFjpOaWKkGoUwtCNYAul+siMrZHFjajdAmUnr1CfvYfqIW//W/CmtGeuLRJEPZGQjx+8hm9jn7WrZ1L1UedQIvUdQBDPs+3oXrfLs+1rCqDRWcugMGSR16ND/+Gdwf3wfDLZ//NSdKNX6JYswMN45fTAvAawDTgcrWjKFTJymaVV0DJqTPAmkxR7EG/H97XHYSfD3sjM9E9XxCqV6Aqm3KADo4zG1m2B6kplxXZNlfDPE8zMCyrmDgpGIQPnnoY6myPHH8YCAbdtvbnw1NWQnes1oKAxXIXOVwjO529YycU1zfQKo6Mf2xuhK/Xr0XOfZp/tXcNY8mPWq/JHuhyOOaA0diLyma57I0/fAzstftSEi9P+nLlAoitJ8NrWFcJmE+cA7bAFn6nOkC3w7EAib+HPJQQL+iewiVTtGVrWuLlyYMdt0hJoYsuZM7OgaXxLLBzefJbVYA7TueyAMv2ItF24iwnh2zWgg0bJyVeXvTjwX2yuaWxsRDELCvJhKF4oXoAqDUoC7LsXVQ2hdgJa7aQYzJvdXgLREE4D0XVd3jMd3qnIuzvF0/JMRscmdjH5jySiQ01FdRjnjqhm+PWo6j3oD8L9m602sgFNXPx0oSRTxcAG/rzto9ceIFvQyG7uTPQy5HyKq/3UbIUJwXocTrdQYMBn/O52IjJyUPp+auQy7mSls1kALDBUa8A/ft3gd8nEvtoZ4yy4+PVbp8PH9eKT0KAcDvMMEa8Um4NcmxFScXjwckC4LVjQ4PRrYckBZK144oAse1wbGtAI8gEANuOaz2StONxALHtcKLWIBlEpgDYtlLrodSOKwF40HpypdJaA1omMh1XaD0aUSuO9YUfxRJCWfCg1qAh1dYgU6G09ROtR5x4vC7hJv70ZSSuP6c50nLcYTcratUBtIx6pG3NM/C9Zn5aLIVtA2nN1wFo4dIzQImQXkJ6CcVEICtPoQJuHvzwfiAoWQmwtLIa+m6HvgnpABMlqVovlMo9MKUlpPStMtlJVHR8Je2gihofbHqV1vxE34gSZkAHoMRXzwBtE2d9CaW1w6ZxMvXT4jRqS8m1DpBSmDSc9A/dJrdAi/elXgAAAABJRU5ErkJggg==">Home</a>
+        <a href="about.html" class="icon"><img class="icon icons8-About" width="48" height="48" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAABmklEQVRoQ+2ZwUrEMBCGJwiLYCqe9RJ9Aj15UtTnEFzxZPeioE+hoJetR3fB59CDJ0+6L6A5qGdxu6CCjG1dQbfJtks0TWR6TZv8X/5/Epgy8PxhnusHAqjaQXLAeQdEFG8A4g5jMG9TLCLcAGPHMuTtYetqIySOcApq8YVt4YNiM5A3vip32ZMKRA/Q7F5XLf5LcAohG8FCaQDRjOuM4anNyBSthcg2ZYO3Bt9TOiAc2v0iF5QAs1EXi3akivG7MMjpJQCdE4vTY3CwNp4N75+/wNXju7FpVh24XJ+Amb7j90kil896fgF0tjgEtU/NDwnAkm8AaYQO+xHa8zFCxnlRTGC1Bgigagdut/kPCXMnsbEpViNEABQhw8RShChCFCG6B3IZoIvMsCyMP7fqgLHaqo9RAvhvDiSNqo4Mg1yD2Zu+0EitRdc6c7rdT1PmvAOpeHjlKyO1111wIBOOyQ8ORUf6e32XdgAB2zKcrP/F8WgyZykAV8WXqgGXxRcCuC5+KIAP4rUAInpuuViwqmKnP/UmR+BvfPsBRHUNQJgkUcEAAAAASUVORK5CYII=">About</a>
+        <a href="teams.html" class="icon"><img class="icon icons8-Teams" width="48" height="48" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAFAklEQVRoQ+2ZTWwbVRCA521K5JK0cdzUJT91XatqK0GFowhI1YraEgJxQA0XDhVNnANXih2QQEIiuXDDbo5IRdgGoQohUQSIA0U2PyGmVYuL6Y+Buqmdxo2bxnbiP9x4H2+3curY+7w/2YRayrt5972Z+WZmZ2bXCBp8oQa3HzYA/u8IbkSgISNw3OeyYcy+Fb0ShuK9wucIYz9GTTcDdvcUB9TvshkRLu3CCFmaH9G8Ynh83zzDoFPeIw6P2sCSU8jmcxlZBoYAg40YYeQMSSYSMDc9U9emjp4uaNfry3umSNlwMyyMu632lBowogDHfC5zE4ITZCNneM26PRWFxfl5QVu26HTwmNEgeA8DuEsYxj+z2oOrAakLMOhzngSETogp4CKRSaehsJjlt2paW6FVu7XS83QRGI97rY43xHTQ7lMBXvW5LAwCn1LBcs6xGKyfWu1+OWfKe6kAx33OKYTQLiVCFZwJei32XgXnhDsx8f4A8f6XSgQqPaM0CoIROH17YjqaTHTH0ncgXbif12u12jQtsLNtO2zZtDnj+eb0S6QUy0qlGoCPbn5/+BnDEz+XDZ7NJCGWSsCFW3+pBsMZ3de9F3Zq9bCjtX3ZN+96nTA7lziZZ9BY0O6WVGZrAF7/9dQ7PbqO9w1E+J6ObtA0NfMKPvzta9UA9MRoW98LvNxCqQj/zN2CKHFSIHge4jPT3OXgEkLD5+1u0RJbA1D98HLKTLrOmUD0Shctje5OxyH6RxhyqTS/Zau+A7r2m2BbTyc1857UGyGeS0OCRLi8Cvk8xK6Gl39jhEcDdu9YvfStAeA6bglgAAAPkCp0hDuMMQwjBB8LCeKMv/bTOUEd+599mgrBNcByk8stLkI2tcD3kqVicYUs0vD8AYfHSoOo28gIjJaDaQI4wyJ44KoKaaGzv8BC4i40t2yG3hfv6/n9Ox8Us3kSiW1w4LnDgrqvXwpBS1sbZInRbIloqbPI3DUcGPnELbRFdJQoHxr0u4gzpC0OIJdcqAvw90XR9K5UFpx0eAT7hGoAhWwOEpEYFDI5uHMjyiuvl0IyASCPULtQZVINIDU7B5d/mFj22vbdBth7kN5c5QKQ0dwq1CNUA1gq3oNMMg3/kkhELoaALS5B5z4TmPoOCOadbACMxwIj3tFqYaoBVAqOXAhBPBzhLx06dlQVAFILv5p0eEl1XLlWDTD5xbe8tx/VtpGKc4iXHjo7wfcErjI9dfR52QAYsAcBGqo8SK79GHB4LaoDREPXIBZ60HwqFezp74UdJuEXGloKkZ6TBgaZyWvqjWpjSSWqcfiqI8ApmY1EYSZ8nS+dTPMm0JJOrCNdmGY8d4YKQPE0rYCrAiCtO6zcRY+A8MPaOACUctkwALSG1RAAGONLpNab5aTkQ/YM4HFS62V9oZAM8CeOSx7mpHjwNdfbNdvqTZ2rTqF1AUBod/nzpBQncHskR0DOOC1FeXUZ5RpYYMSjlXK2cs9DA0CbdcSAJANUC+r/YHCUvHK+J6ZA6n1SgQSnTbHzygGcg34ycPHvzGos2rwvJlsxwEHnEPeOLDtnaQYJDWpixst6iGtSyGWzAMtayNcKM/nPwEy+Yiv+jkobldcUoFq42WXTaoCAKIKS38DK+hWnkBTvSIZi0cuTb7rPSJFZvWdNAYQMEoLCDGOR28DWJQJKPCr3zLpHQK6BYvs3AMQ8tNb3Gz4C/wG6Jy5PdTo4kQAAAABJRU5ErkJggg==">Teams</a>
+        <a href="Schedule.html" class="icon"><img class="icon icons8-Day-View" width="48" height="48" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAABiElEQVRoQ2NkGOKAcYi7n2HUAwMdg6MxMGhj4Pz1+woMjH/7gQ40AGKFAXLoA6C9Fxj+MxcaaiqC2BgAaxKCOv48ULXAADkc3doPQE8YYvMEdg/cuLMBaIL/IHE8zBkbDTVUAtDdhMsD7wdR6MPc/ADoAUViPfAfXaFqdhRdI+T21GUY9gE9gBHguGJg1AOURtdoDFAagrTQT1EeoIWDSDWTIg8cPHMJxT57Ez0wH12cVEfhUg8zH1l+1APIoTEaAwTSGtWTELXSNiXmUJQHKLGYWnop8sBoKURiNFA9D4zGwEDHAIn200Q5RZmYJi4i0VCKPDCaB0gM7dFSCD3AhnwSIjEF0EQ5RZmYJi4i0VCKPDDkk9CoB0hMLiO7GD13484H4JgjP4mBRlPl//8zPDTSVFFAt2SYDq8DZ2f+M/69MFhiATjS/JHxP7MB0RMcoGiCztJMAEadASMjgzxN0wcOw0HJBmg3aIqpgKQppoFwLLl2jk6zkhty1NI3GgPUCklyzRnyMQAALYwaQDNvJI4AAAAASUVORK5CYII=">Schedule</a>
+    </div>
+    <header class="index">
+        <span class="fix" style="font-size:25px; cursor:pointer" onclick="openNav()">&#9776;</span>
+        <span class="main-title">North Youth Soccer League</span>
+    </header>
+    <div class="logo-container-pic">
+        <div class="display-txt">
+            <h4 class="landing-text"><span>Upcoming Events</span></h4>
+            <h5 class="landing-text2"><span>August 4th</span></h5>
+            <p class="upcoming">NYSL Fundraiser</p>
+            <h5 class="landing-text2"><span>August 16th</span><h5>
+            <p class="upcoming">Season Kickoff: Meet the Teams</p>
+        </div>
+    </div>
+    <footer>
+   
+
+    </footer>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+            let app = firebase.app();
+            let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+        } catch (e) {
+            console.error(e);
+
+        }
+    });
+    </script>
+    <script type="text/javascript" src="assets/script/main32.js"></script>
+</body>
+
+</html>

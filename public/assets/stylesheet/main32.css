@@ -1,0 +1,331 @@
+/*Home page*/
+
+h1 {
+
+    color: blue;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+.logo-container-pic {
+	display:block;
+    width: 100%;
+    height: 100%;
+    background: url("../images/soccerfirst.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.logo-container-pic2 {
+    width: 100%;
+    height: 100%;
+    background: url("../images/soccerfield.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.logo {
+    position:relative;
+    top:100px;
+    left:35%;
+    height: 5em;
+}
+header {
+    background-color: #c84346;
+    color: #040404;
+    height: 75px;
+    line-height: 60px;
+}
+
+/*#31FFB7 green header color i had before */
+.main-title {
+    vertical-align: middle;
+    font-size: 25px;
+}
+
+.about-title,
+.schedule-title,
+.teams-title {
+    font-size: 30px;
+    position: absolute;
+    left: 140px;
+    top: 3px;
+}
+
+span.fix {
+    padding: 27px 15px;
+    width: 100%;
+    height: 80px;
+    vertical-align: middle;
+}
+
+div#mySidenav.sidenav {
+    background-color:rgba(0,0,0,.85);
+ 
+}
+
+.display-txt{ 
+	text-align: center;
+	padding-top:60px;
+ }
+
+ .display-txt h4{
+ 	margin: 25px 0;	
+ }
+
+.display-txt span { 
+	color:white;
+	font-size:35px;
+	padding-top:20px;	
+	border-bottom: 5px solid #c84346;
+ }
+
+
+ .upcoming { 
+ 	color:rgba(240, 255, 255, .6);
+ 	font-size:18px;
+ 	text-align:center;
+ 	padding: 20px 0;
+  }
+/*#2D353F #FF5031*/
+
+body {
+	font-family: 'Roboto', sans-serif;
+ }
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 18px 8px 20px 60px;
+    text-decoration: none;
+    font-size: 35px;
+    line-height: 55px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    border-bottom: 1px solid;
+}
+
+a.closebtn{ 
+	border:none;
+ }
+.sidenav a img {
+    position: absolute;
+    left: 10px;
+}
+
+.sidenav a:hover,
+.offcanvas a:focus {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.icon.icons8-Home,
+.icon.icons8-About,
+.icon.icons8-Teams,
+.icon.icons8-Day-View,
+{
+
+    vertical-align: middle;
+}
+
+
+
+/*About page*/
+
+h3 {
+    font-weight: bold;
+    font-size:60px;
+    text-align: center;
+    padding: 60px 0px;
+  	color:rgba(255,255,255,.80);
+}
+
+
+.indent {
+    padding: 15px 30px;
+    font-size: 17px;
+    text-indent: 15px;
+    text-align: justify;
+    line-height: 1.25;
+    color: black;
+}
+
+.about-info {
+    display:block;
+    height:175px;
+    background: url("../images/northside.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    margin:10px;
+}	
+.about-info2 {
+    display:block;
+    height:175px;
+    background: url("../images/vision.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    margin:10px;
+}	
+.about-info3, .about-info3 h3{
+    display:block;
+    height:175px;
+    background: url("../images/information.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    margin:10px;
+    font-weight: bold;
+    font-size:45px;
+    text-align: center;
+    padding: 45px 0px;
+  	color:rgba(255,255,255,.80);
+}	
+a.icon {
+    position: relative;
+}
+
+
+
+/*Teams Page*/
+
+.u1,
+.u3,
+.u5 {
+    background-color: #1B71D9;
+    margin: 10px; 
+}
+
+.u2,
+.u4,
+.u6 {
+    background-color: #FF5031;
+    margin: 10px;
+}
+
+.team-pic1 {
+    height: 98px;
+    opacity: 0.4;
+    vertical-align: middle;
+}
+
+.team-pic2 {
+    height: 115px;
+    opacity: 0.4;
+    vertical-align: middle;
+}
+
+.team-pic3 {
+    height: 107px;
+    opacity: 0.4;
+    vertical-align: middle;
+}
+
+.team-number {
+	display:inline-block;
+    color: white;
+    font-size: 45px;
+
+}
+
+h1.team-number {
+    padding-left: 60px;
+}
+
+.teams-pic { 
+    display:block;
+    height:175px;
+    background: url("../images/teams.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    margin:10px;
+}	
+
+/*Schedule*/
+
+.hey {
+    background-color: grey;
+    border-radius: 5px;
+    width: 200px;
+    height: auto;
+    border: solid;
+    opacity: .3;
+}
+
+.month {
+    text-align: center;
+    font-size: 32px;
+    padding-top: 22px;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.schedule-pic {
+    height: 100px;
+    opacity: .3;
+}
+
+.schedule-back1 {
+    background-color:rgba(27, 113, 217, .4);
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.schedule-back2 {
+    background-color: rgba(255, 80, 49, .4);
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.game-match {
+    color: white;
+    font-size: 35px;
+}
+.contain-date { 
+	display:inline-block;
+	font-size:20px;
+ }
+ .contain-matchinfo { 
+ 	display:inline-block;
+ 	position:relative;
+ 	left:60px;
+ 	text-align: center;
+  }
+ h1.game-match{ 
+ 	text-align:center;
+  }
